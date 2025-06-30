@@ -1,25 +1,34 @@
-#Prompt Library
+# Prompt Library
 
 A curated collection of AI prompts designed and tested primarily for coding tasks, with a special focus on Dynamics 365 Business Central and the AL programming language.
 
-Overview
+---
 
-This repository contains prompts that have been carefully crafted, optimized, and validated to effectively interact with AI models across various scenarios, emphasizing practical software development use cases. The primary goal is to enhance productivity and ensure consistent outcomes, especially for developers working with Dynamics Business Central.
+## Overview
 
-Contents
+This repository contains prompts that have been carefully crafted, optimized, and validated to effectively interact with AI models across various scenarios, emphasizing practical software development use cases. The primary goal is to enhance productivity and ensure consistent outcomes, especially for developers working with Dynamics 365 Business Central.
 
-Business Central AL Prompts: Optimized for developing, reviewing, and testing AL code.
+---
 
-General Coding Prompts: Effective prompts for various programming languages and frameworks.
+## Contents
 
-Testing & Debugging: Prompts designed for identifying issues, debugging, and refining software.
+* **Business Central AL Prompts**
+  Optimized for developing, reviewing, and testing AL code within Dynamics 365 Business Central.
 
-Other Domains: Miscellaneous prompts used for exploratory purposes, creativity, and experimentation across multiple fields.
+* **General Coding Prompts**
+  Effective prompts for various programming languages and frameworks (e.g., Python, JavaScript).
 
-Structure
+* **Testing & Debugging**
+  Prompts designed for identifying issues, debugging, and refining software.
 
-Prompts are organized by domain and clearly labeled:
+* **Other Domains**
+  Miscellaneous prompts for exploratory purposes, creativity, and experimentation across multiple fields.
 
+---
+
+## Structure
+
+```
 /
 ├── business-central-al/
 │   ├── code-generation/
@@ -32,29 +41,46 @@ Prompts are organized by domain and clearly labeled:
 ├── testing-debugging/
 ├── creative-prompts/
 └── misc/
+```
 
-How to Use
+---
 
-Clone or fork this repository.
+## How to Use
 
-Browse prompts within the desired category.
+1. **Clone or fork** this repository:
 
-Adapt prompts as necessary for your specific context or AI model.
+   ```bash
+   git clone https://github.com/your-org/prompt-library.git
+   ```
 
-Example usage:
+2. **Browse** prompts within the desired category.
 
-Prompt: "Create a detailed code review checklist for Dynamics Business Central AL development."
+3. **Adapt** prompts as necessary for your specific context or AI model.
 
-Contributing
+4. **Example usage**:
+
+   > **Prompt:**
+   > “Create a detailed code review checklist for Dynamics 365 Business Central AL development.”
+
+---
+
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
-Ensure prompts are clear, precise, and actionable.
+1. **Clarity & Precision**
+   Ensure prompts are clear, precise, and actionable.
 
-Categorize your prompts appropriately.
+2. **Proper Categorization**
+   Place each prompt in the appropriate folder.
 
-Submit pull requests with detailed explanations of the prompt's purpose and context.
+3. **Pull Requests**
 
-License
+   * Provide detailed explanations of the prompt’s purpose and context.
+   * Include examples of expected AI responses, if possible.
 
-This repository is open-source and available under the MIT License.
+---
+
+## License
+
+This repository is open-source and available under the [MIT License](LICENSE).
