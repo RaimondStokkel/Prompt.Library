@@ -30,7 +30,7 @@ This repository contains prompts that have been carefully crafted, optimized, an
 
 ```
 /
-├── business-central-al/
+├── al-coding/
 │   ├── code-generation/
 │   ├── code-review/
 │   └── debugging/
