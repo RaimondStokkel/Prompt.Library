@@ -1,0 +1,2 @@
+Maintain the subject identity, pose, and expression exactly from the reference image. However, completely re-render the image quality. Transform the flat amateur lighting into a high quality professional image, 
+Simulate a Sony A7 IV photo taken with an 85mm f/1.4 lens. The background must be extremely blurry and creamy (bokeh). Add high micro contrasting, add extremely detailed skin textures (fur textures for animals), I usually use either a teal color grading for overcast days, or warm color grading for sunny days, or an orange and teal color grading for indoor shots
