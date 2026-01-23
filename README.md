@@ -32,12 +32,8 @@ This repository contains prompts that have been carefully crafted, optimized, an
 /
 ├── al-coding/
 │   ├── code-generation/
-│   ├── code-review/
-│   └── debugging/
+│   └── code-review/
 ├── general-coding/
-│   ├── python/
-│   ├── javascript/
-│   └── other-languages/
 ├── testing-debugging/
 ├── creative-prompts/
 └── misc/
