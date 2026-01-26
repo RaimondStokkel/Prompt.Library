@@ -1,36 +1,63 @@
 # Prompt Library
 
-A curated collection of AI prompts designed and tested primarily for coding tasks, with a special focus on Dynamics 365 Business Central and the AL programming language.
+> **Preview** - This is a personal collection of AI prompts in active development. Use at your own risk. Prompts may change, break, or be removed without notice.
 
 ---
 
 ## Overview
 
-This repository contains prompts that have been carefully crafted, optimized, and validated to effectively interact with AI models across various scenarios, emphasizing practical software development use cases. The primary goal is to enhance productivity and ensure consistent outcomes, especially for developers working with Dynamics 365 Business Central.
+A curated collection of AI prompts for coding tasks, code review, debugging, and creative work. Originally focused on Dynamics 365 Business Central and AL development, now expanding to general software engineering use cases.
 
 ---
 
-## Contents
+## Prompts
 
-* **Business Central AL Prompts**
-  Optimized for developing, reviewing, and testing AL code within Dynamics 365 Business Central.
+### AL-Coding (Business Central)
 
-* **General Coding Prompts**
-  Effective prompts for various programming languages and frameworks (e.g., Python, JavaScript).
+| Prompt | Description |
+|--------|-------------|
+| [VScode.Review.Claude.md](AL-Coding/code-review/VScode.Review.Claude.md) | Senior AL code reviewer for Dynamics 365 Business Central |
+| [performance-test.al](AL-Coding/code-generation/performance-test.al) | Performance test suite generation for BC Performance Toolkit |
 
-* **Testing & Debugging**
-  Prompts designed for identifying issues, debugging, and refining software.
+### General Coding
 
-* **Other Domains**
-  Miscellaneous prompts for exploratory purposes, creativity, and experimentation across multiple fields.
+| Prompt | Description |
+|--------|-------------|
+| [CodeExplainer.md](general-coding/CodeExplainer.md) | Explain code at beginner, intermediate, or advanced levels |
+| [APIDesignReview.md](general-coding/APIDesignReview.md) | REST API design review with scoring and recommendations |
+| [SecurityReview.md](general-coding/SecurityReview.md) | Security vulnerability analysis (OWASP Top 10) |
+| [SQLOptimizer.md](general-coding/SQLOptimizer.md) | SQL query optimization with index recommendations |
+| [RefactoringAdvisor.md](general-coding/RefactoringAdvisor.md) | Code smell detection and refactoring guidance |
+| [GitCommitCraft.md](general-coding/GitCommitCraft.md) | Conventional commit message generation |
+
+### Testing & Debugging
+
+| Prompt | Description |
+|--------|-------------|
+| [UnitTestGenerator.md](testing-debugging/UnitTestGenerator.md) | Comprehensive unit test generation (AAA pattern) |
+| [DebuggingDetective.md](testing-debugging/DebuggingDetective.md) | Systematic debugging using SEARCH methodology |
+
+### Creative Prompts
+
+| Prompt | Description |
+|--------|-------------|
+| [PhotoRealistic.md](creative-prompts/PhotoRealistic.md) | AI image generation prompt engineering (Midjourney, DALL-E, SD) |
+
+### Miscellaneous
+
+| Prompt | Description |
+|--------|-------------|
+| [Lyra.md](misc/Lyra.md) | AI prompt optimization specialist |
+| [BCTDDReviewer.md](misc/BCTDDReviewer.md) | Business Central architectural document reviewer |
+| [ReviewTechDoc.md](misc/ReviewTechDoc.md) | Technical architecture document auditor |
+| [GoalSetting.md](misc/GoalSetting.md) | Personal goal-setting coach (Dutch) |
 
 ---
 
 ## Structure
 
 ```
-/
-├── al-coding/
+├── AL-Coding/
 │   ├── code-generation/
 │   └── code-review/
 ├── general-coding/
@@ -41,42 +68,36 @@ This repository contains prompts that have been carefully crafted, optimized, an
 
 ---
 
-## How to Use
+## Usage
 
-1. **Clone or fork** this repository:
-
+1. Clone or fork this repository:
    ```bash
-   git clone https://github.com/your-org/prompt-library.git
+   git clone https://github.com/RaimondStokkel/Prompt.Library.git
    ```
 
-2. **Browse** prompts within the desired category.
+2. Browse prompts within the desired category.
 
-3. **Adapt** prompts as necessary for your specific context or AI model.
+3. Copy and adapt prompts for your specific context or AI model.
 
-4. **Example usage**:
+---
 
-   > **Prompt:**
-   > “Create a detailed code review checklist for Dynamics 365 Business Central AL development.”
+## Disclaimer
+
+This is a **preview release** of a personal prompt library.
+
+- Prompts are provided "as is" with no guarantees
+- Results may vary depending on AI model and context
+- Prompts may be modified or removed at any time
+- Test thoroughly before using in production workflows
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Please follow these guidelines:
-
-1. **Clarity & Precision**
-   Ensure prompts are clear, precise, and actionable.
-
-2. **Proper Categorization**
-   Place each prompt in the appropriate folder.
-
-3. **Pull Requests**
-
-   * Provide detailed explanations of the prompt’s purpose and context.
-   * Include examples of expected AI responses, if possible.
+Contributions welcome. Please ensure prompts are clear, well-structured, and placed in the appropriate category.
 
 ---
 
 ## License
 
-This repository is open-source and available under the [MIT License](LICENSE).
+[MIT License](LICENSE)
