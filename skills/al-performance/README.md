@@ -1,34 +1,56 @@
 # AL Performance Skills
 
-A collection of focused AI skill files for analyzing and optimizing **Business Central AL development performance**. Each skill primes the model with deep domain expertise and enforces structured, actionable output.
+A collection of VS Code GitHub Copilot prompt files (`.prompt.md`) for analyzing and optimizing **Business Central AL development performance**. Each file follows the [VS Code Copilot prompt file standard](https://code.visualstudio.com/docs/copilot/customization/prompt-files) with YAML frontmatter and structured prompt content.
+
+## Usage in VS Code
+
+Copy the `.prompt.md` files you need into your project's `.github/prompts/` folder. They will appear as slash commands in GitHub Copilot Chat (e.g. `/ALQueryOptimizer`).
+
+```
+your-project/
+└── .github/
+    └── prompts/
+        ├── ALQueryOptimizer.prompt.md
+        ├── ALFlowfieldPerformance.prompt.md
+        └── ...
+```
+
+Then in Copilot Chat, type `/` to see available prompts, select one, and paste the AL code or profiler output you want analyzed.
 
 ## Skills
 
-| Skill File | Focus Area | Key Problem Solved |
-|-----------|------------|-------------------|
-| [ALQueryOptimizer.md](./ALQueryOptimizer.md) | Data access & queries | SETRANGE/SETFILTER mismatches, missing SETLOADFIELDS, N+1 reads |
-| [ALFlowfieldPerformance.md](./ALFlowfieldPerformance.md) | FlowFields & SIFT | CALCFIELDS in loops, SIFT write overhead, SETAUTOCALCFIELDS |
-| [ALBulkOperations.md](./ALBulkOperations.md) | Bulk data processing | Row-by-row MODIFY/DELETE → MODIFYALL/DELETEALL, batch commit design |
-| [ALIndexDesignAdvisor.md](./ALIndexDesignAdvisor.md) | Table keys & indexes | Missing keys, wrong column order, SIFT index design |
-| [ALLockAnalyzer.md](./ALLockAnalyzer.md) | Concurrency & locking | Deadlocks, premature LOCKTABLE, long transactions, blocking |
-| [ALReportPerformance.md](./ALReportPerformance.md) | Reports & analytics | DataItem join problems, per-row CALCFIELDS, layout overhead |
-| [ALAPIOptimizer.md](./ALAPIOptimizer.md) | APIs & web services | OData filter pushdown, FlowField exposure, HttpClient patterns |
-| [ALBackgroundTaskAdvisor.md](./ALBackgroundTaskAdvisor.md) | Job Queue & async | Unbounded batch jobs, missing COMMIT intervals, parallelism |
-| [ALUIPerformance.md](./ALUIPerformance.md) | Pages & UI | OnAfterGetRecord DB calls, list scroll lag, round-trips |
-| [ALCodeProfiler.md](./ALCodeProfiler.md) | Profiling & hotspots | Profiler interpretation, O(N²) patterns, caching opportunities |
+| Prompt File | Focus Area | Key Problem Solved |
+|------------|------------|-------------------|
+| [ALQueryOptimizer.prompt.md](./ALQueryOptimizer.prompt.md) | Data access & queries | SETRANGE/SETFILTER mismatches, missing SETLOADFIELDS, N+1 reads |
+| [ALFlowfieldPerformance.prompt.md](./ALFlowfieldPerformance.prompt.md) | FlowFields & SIFT | CALCFIELDS in loops, SIFT write overhead, SETAUTOCALCFIELDS |
+| [ALBulkOperations.prompt.md](./ALBulkOperations.prompt.md) | Bulk data processing | Row-by-row MODIFY/DELETE → MODIFYALL/DELETEALL, batch commit design |
+| [ALIndexDesignAdvisor.prompt.md](./ALIndexDesignAdvisor.prompt.md) | Table keys & indexes | Missing keys, wrong column order, SIFT index design |
+| [ALLockAnalyzer.prompt.md](./ALLockAnalyzer.prompt.md) | Concurrency & locking | Deadlocks, premature LOCKTABLE, long transactions, blocking |
+| [ALReportPerformance.prompt.md](./ALReportPerformance.prompt.md) | Reports & analytics | DataItem join problems, per-row CALCFIELDS, layout overhead |
+| [ALAPIOptimizer.prompt.md](./ALAPIOptimizer.prompt.md) | APIs & web services | OData filter pushdown, FlowField exposure, HttpClient patterns |
+| [ALBackgroundTaskAdvisor.prompt.md](./ALBackgroundTaskAdvisor.prompt.md) | Job Queue & async | Unbounded batch jobs, missing COMMIT intervals, parallelism |
+| [ALUIPerformance.prompt.md](./ALUIPerformance.prompt.md) | Pages & UI | OnAfterGetRecord DB calls, list scroll lag, round-trips |
+| [ALCodeProfiler.prompt.md](./ALCodeProfiler.prompt.md) | Profiling & hotspots | Profiler interpretation, O(N²) patterns, caching opportunities |
 
-## Usage
+## File Format
 
-Paste the full content of a skill file as a system prompt or at the start of a conversation with your AI assistant. Then provide the AL code, profiler output, or page/table definition you want analyzed.
+Each file follows the VS Code Copilot `.prompt.md` standard:
 
-### Example workflow
+```markdown
+---
+mode: 'agent'
+description: 'What this prompt does and when to use it'
+tools: ['codebase']
+---
 
+# Skill Title
+
+[Expert persona, methodology, output format, constraints]
 ```
-1. Open ALQueryOptimizer.md
-2. Copy entire contents → paste as system prompt
-3. Paste your AL codeunit or procedure
-4. Ask: "Analyze this for query performance issues"
-```
+
+- **`mode: 'agent'`** — Runs with full tool access so Copilot can read and analyze your codebase
+- **`description`** — Shown in the prompt picker; includes trigger keywords for discoverability
+- **`tools: ['codebase']`** — Grants access to search and read files in the workspace
 
 ## Severity Scale
 
