@@ -37,20 +37,30 @@ A curated collection of AI prompts for coding tasks, code review, debugging, and
 | [UnitTestGenerator.md](testing-debugging/UnitTestGenerator.md) | Comprehensive unit test generation (AAA pattern) |
 | [DebuggingDetective.md](testing-debugging/DebuggingDetective.md) | Systematic debugging using SEARCH methodology |
 
+### Image Prompts
+
+| Prompt | Description |
+|--------|-------------|
+| [PhotoRealistic.md](image-prompts/PhotoRealistic.md) | Photo-realistic image generation framework (Midjourney, DALL-E, SD) |
+| [ProfessionalPhotos.md](image-prompts/ProfessionalPhotos.md) | Transform amateur photos into professional-quality images |
+| [ProductPhotography.md](image-prompts/ProductPhotography.md) | E-commerce product photography with studio lighting setups |
+| [ConsistentCharacter.md](image-prompts/ConsistentCharacter.md) | Maintain character identity across multiple generated images |
+| [LogoDesign.md](image-prompts/LogoDesign.md) | Logo and icon generation for brand identity |
+| [ArchitecturalVisualization.md](image-prompts/ArchitecturalVisualization.md) | Interior design and architectural renders |
+| [CinematicScene.md](image-prompts/CinematicScene.md) | Film-style cinematic compositions and scene direction |
+| [FoodPhotography.md](image-prompts/FoodPhotography.md) | Professional food and beverage photography styling |
+
 ### Creative Prompts
 
 | Prompt | Description |
 |--------|-------------|
-| [PhotoRealistic.md](creative-prompts/PhotoRealistic.md) | AI image generation prompt engineering (Midjourney, DALL-E, SD) |
+| [GoalSetting.md](creative-prompts/GoalSetting.md) | Personal SMART goal-setting coach (Dutch) |
 
 ### Miscellaneous
 
 | Prompt | Description |
 |--------|-------------|
 | [Lyra.md](misc/Lyra.md) | AI prompt optimization specialist |
-| [BCTDDReviewer.md](misc/BCTDDReviewer.md) | Business Central architectural document reviewer |
-| [ReviewTechDoc.md](misc/ReviewTechDoc.md) | Technical architecture document auditor |
-| [GoalSetting.md](misc/GoalSetting.md) | Personal goal-setting coach (Dutch) |
 
 ---
 
@@ -62,6 +72,7 @@ A curated collection of AI prompts for coding tasks, code review, debugging, and
 │   └── code-review/
 ├── general-coding/
 ├── testing-debugging/
+├── image-prompts/
 ├── creative-prompts/
 └── misc/
 ```
